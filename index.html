@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wymiana walut</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">Kantor - App</h1>
+        <h3 class="subtitle">Aktualne kursy walut</h3>
+      </div>
+      <div class="section-left section">
+        <input type="number" class="amount-first" value="1" />
+        <select class="currency-first currency">
+          <option value="PLN"selected>PLN</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP" >GBP</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button class="change">
+          <svg class="icon">
+            <use href="./icons/icons.svg#swap"></use>
+          </svg>
+        </button>
+        <button class="check">
+          <svg class="icon">
+            <use href="./icons/icons.svg#calc"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="section-right section">
+        <input type="number" class="amount-second" disabled/>
+        <select class="currency-second currency">
+          <option value="PLN">PLN</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+      <p class="info"></p>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
